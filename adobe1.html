@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Site </title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer="defer"></script>
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="header__main-title-container"> 
+        <h1>ПО Разработки электронных учебных курсов</h1>
+      </div>
+    </header>
+    <section class="main">
+      <section class="navigation">
+        <div class="navigation__nav-container" x-data="{isNav1 : false, isNav2 : false, isNav3 : false}">
+          <div class="title-container"> 
+            <p class="title-text">Навигация </p>
+            <hr class="title-line"/>
+          </div>
+          <div class="point-container"> <a class="point-text" href="index.html">Введение </a></div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav1 = !isNav1">iSpring Suite</p>
+            <div class="next-point-container" x-show="isNav1">
+              <div class="mini-point-container"> <a href="ispring1.html">Введение в iSpring Suite</a></div>
+              <div class="mini-point-container"> <a href="ispring2.html">Освоение программы</a></div>
+              <div class="mini-point-container"> <a href="ispring3.html">Дизайн электронных курсов</a></div>
+              <div class="mini-point-container"> <a href="ispring4.html">Интерактивные элементы</a></div>
+              <div class="mini-point-container"> <a href="ispring5.html">Создание тестов</a></div>
+              <div class="mini-point-container"> <a href="ispring6.html">Мобильное ообучение</a></div>
+              <div class="mini-point-container"> <a href="ispring7.html">Вывод</a></div>
+            </div>
+          </div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav2 = !isNav2">Adobe Captivate </p>
+            <div class="next-point-container" x-show="isNav2"> 
+              <div class="mini-point-container"> <a href="adobe1.html">Введение Adobe Captivate</a></div>
+              <div class="mini-point-container"> <a href="adobe2.html">Освоение программы</a></div>
+              <div class="mini-point-container"> <a href="adobe3.html">Дизайн электронных курсов</a></div>
+              <div class="mini-point-container"> <a href="adobe4.html">Интерактивные элемент</a></div>
+              <div class="mini-point-container"> <a href="adobe5.html">Создание тестов</a></div>
+              <div class="mini-point-container"> <a href="adobe6.html">Мобильное ообучение</a></div>
+              <div class="mini-point-container"> <a href="adobe7.html">Вывод</a></div>
+            </div>
+          </div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav3 = !isNav3">Articulate 360 </p>
+            <div class="next-point-container" x-show="isNav3"> 
+              <div class="mini-point-container"> <a href="art1.html">Введение Articulate 360</a></div>
+              <div class="mini-point-container"> <a href="art2.html">Освоение программы</a></div>
+              <div class="mini-point-container"> <a href="art3.html">Дизайн электронных курсов</a></div>
+              <div class="mini-point-container"> <a href="art4.html">Интерактивные элемент</a></div>
+              <div class="mini-point-container"> <a href="art5.html">Создание тестов</a></div>
+              <div class="mini-point-container"> <a href="art6.html">Мобильное ообучение</a></div>
+              <div class="mini-point-container"> <a href="art7.html">Вывод</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contents"> 
+        <div class="contents__cont-container"> 
+          <div class="title-container">
+            <h2>Articulate 360 — мощный и дорогой комбайн для любых задач электронного обучения</h2>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container"> 
+              <p><b>Платформа:</b> зависит от используемой компоненты (Windows, Mac, Web);</p>
+              <p><b>Форма реализации:</b> Смешанная (веб-сервис, приложение, надстройка в PowerPoint)</p>
+              <p><b>Языки интерфейса:</b> Английский, китайский, французский, немецкий, испанский.</p>
+              <p><b>Цена:</b> Подписка от 999$ в год (зависит от реселлера)</p>
+              <p><b>Скики:</b> учебным заведениям;</p>
+              <p><b>Пробная версия:</b> 30 дней.</p>
+            </div>
+            <div class="image-container">
+              <div class="box"><img src="images/image2-1.jpg"/></div>
+            </div>
+            <div class="text-container"> 
+              <p>Articulate 360 — набор инструментов для электронного обучения, состоящий из 4 программ, 4 веб-сервисов и одного мобильного приложения.</p>
+            </div>
+            <div class="video-container">
+              <div class="box">
+                <iframe src="https://www.youtube.com/embed/iZydAPrVry4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+            </div>
+            <div class="list-item"> 
+              <ul>
+                <li><b>Программы:</b> </li>
+              </ul>
+              <ol>
+                <li><b>Studio 360</b> — надстройка в Power Point, позволяющая быстро создавать интерактивные электронные курсы в программе с привычным интерфейсом. Включает в себя:</li>
+                <li><b>Presenter 360</b> — позволяет превращать слайды в интерактивные электронные курсы;</li>
+                <li><b>Quizmaker 360</b> — позволяет создавать тесты и опросы с уникальным дизайном, переходами и анимацией (11 типов оцениваемых вопросов, 9 типов анкетных вопросов, 6 типов вопросов произвольной формы);</li>
+                <li><b>Engage 360</b> — позволяет создавать 20 видов интерактивных элементов;</li>
+                <li><b>Storyline 360</b> — независимый полнофункциональный редактор интерактивных электронных курсов;</li>
+                <li><b>Replay 360</b> — программа для синхронной записи видео с экрана и с веб-камеры (как во время вебинара) и редактирования полученного видео.</li>
+              </ol>
+              <ul>
+                <li><b>Веб-сервисы:</b></li>
+              </ul>
+              <ol>
+                <li><b>Rise</b> — онлайн-сервис для создания, редактирования и хранения интерактивных электронных курсов в виде веб-страниц;</li>
+                <li><b>Articulate Review</b> — сервис для получения вопросов, замечаний, комментариев и пожеланий по электронным курсам и управления ими в одном месте;</li>
+                <li><b>Content Library</b> — онлайн-библиотека, содержащая большое количество фотографий, иллюстраций, иконок, персонажей, а также готовых шаблонов для слайдов;</li>
+                <li><b>Articulate Live</b> — вебинары, проводимые экспертами электронного обучения и помогающие быстрее освоить все инструменты Articulate 360. Обучение проводится на английском языке.</li>
+              </ol>
+              <ul>
+                <li><b>Мобильное приложение:</b></li>
+              </ul>
+              <ol>
+                <li><b>Preso</b> — приложение, которое позволяет создавать обучающие видеоролики на iPad: открываете картинку или документ, добавляете к нему голосовое сопровождение, по ходу рассказа выделяете элементы на картинках с помощью курсора, рисования или масштабирования.</li>
+              </ol>
+            </div>
+            <div class="text-container"> 
+              <p>Непосредственное отношение к разработке электронных курсов имеют лишь три инструмента: Studio 360, Storyline 360, Rise.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="footer"></footer>
+  </body>
+</html>
