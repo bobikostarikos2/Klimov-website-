@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Site </title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer="defer"></script>
+  </head>
+  <body>
+    <!--include modules/header/header.pug-->
+    <section class="main">
+      <section class="navigation">
+        <div class="navigation__nav-container" x-data="{isNav1 : false, isNav2 : false, isNav3 : false}">
+          <div class="title-container"> 
+            <p class="title-text">Навигация </p>
+            <hr class="title-line"/>
+          </div>
+          <div class="point-container"> <a class="point-text" href="index.html">Стартовая страница </a></div>
+          <div class="point-container"> <a class="point-text" href="start.html">Введение </a></div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav1 = !isNav1">iSpring Suite</p>
+            <div class="next-point-container" x-show="isNav1">
+              <div class="mini-point-container"> <a href="ispring1.html#1_1">Введение в iSpring Suite</a></div>
+              <div class="mini-point-container"> <a href="ispring1.html#1_2">Освоение программы</a></div>
+              <div class="mini-point-container"> <a href="ispring1.html#1_3">Дизайн электронных курсов</a></div>
+              <div class="mini-point-container"> <a href="ispring1.html#1_4">Интерактивные элементы</a></div>
+              <div class="mini-point-container"> <a href="ispring1.html#1_5">Создание тестов</a></div>
+              <div class="mini-point-container"> <a href="ispring1.html#1_6">Мобильное ообучение</a></div>
+              <div class="mini-point-container"> <a href="ispring1.html#1_7">Вывод</a></div>
+            </div>
+          </div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav2 = !isNav2">Articulate 360 </p>
+            <div class="next-point-container" x-show="isNav2"> 
+              <div class="mini-point-container"> <a href="adobe1.html#2_1">Введение в Articulate 360 </a></div>
+              <div class="mini-point-container"> <a href="adobe1.html#2_2">Освоение программы</a></div>
+              <div class="mini-point-container"> <a href="adobe1.html#2_3">Дизайн электронных курсов</a></div>
+              <div class="mini-point-container"> <a href="adobe1.html#2_4">Интерактивные элемент</a></div>
+              <div class="mini-point-container"> <a href="adobe1.html#2_5">Создание тестов</a></div>
+              <div class="mini-point-container"> <a href="adobe1.html#2_6">Мобильное ообучение</a></div>
+              <div class="mini-point-container"> <a href="adobe1.html#2_7">Вывод</a></div>
+            </div>
+          </div>
+          <div class="point-container"> 
+            <p class="point-text" @click="isNav3 = !isNav3">Adobe Captivate  </p>
+            <div class="next-point-container" x-show="isNav3"> 
+              <div class="mini-point-container"> <a href="art1.html#3_1">Введение в Adobe Captivate </a></div>
+              <div class="mini-point-container"> <a href="art1.html#3_2">Освоение программы</a></div>
+              <div class="mini-point-container"> <a href="art1.html#3_3">Дизайн электронных курсов</a></div>
+              <div class="mini-point-container"> <a href="art1.html#3_4">Интерактивные элемент</a></div>
+              <div class="mini-point-container"> <a href="art1.html#3_5">Создание тестов</a></div>
+              <div class="mini-point-container"> <a href="art1.html#3_6">Мобильное ообучение</a></div>
+              <div class="mini-point-container"> <a href="art1.html#3_7">Вывод</a></div>
+            </div>
+          </div>
+          <div class="point-container"> <a class="point-text" href="finish.html">Заключение</a></div>
+          <div class="point-container"> <a class="point-text" href="refs.html">Список использованных источников</a></div>
+        </div>
+      </section>
+      <section class="contents"> 
+        <div class="contents__cont-container"> 
+          <div class="title-container">
+            <h1>ПО Разработки электронных учебных курсов</h1>
+          </div>
+          <div class="content-container"> 
+            <div class="text-container"> 
+              <p>Данный сайт разработан студентом группы КТбо3-4 Климовым В.А.</p>
+            </div>
+            <div class="image-container">
+              <div class="logo-container"><img class="logo" src="https://naked-science.ru/includ092119937/123.jpg"/><img class="logo" src="http://smr-rostov.ru/wp-content/uploads/2021/02/ИКТИБ.jpg"/></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="footer"></footer>
+    <button class="up" x-data="{}" @click="window.scrollTo(pageYOffset, 0);">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+        <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M335.083,271.083 L228.416,377.749c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251c-8.341-8.341-8.341-21.824,0-30.165 L289.835,256l-91.584-91.584c-8.341-8.341-8.341-21.824,0-30.165s21.824-8.341,30.165,0l106.667,106.667 C343.424,249.259,343.424,262.741,335.083,271.083z"></path>
+      </svg>
+    </button>
+  </body>
+</html>
